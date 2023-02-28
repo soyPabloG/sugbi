@@ -3,6 +3,5 @@
 ;; This file is listed in .gitignore and will be excluded from version control by Git.
 
 {:port 3000
- ; set your test database connection URL here
- ; :database-url "postgresql://localhost/sugbi_test?user=pablo&password=db_user_password_here"
-}
+
+ :database-url "postgresql://localhost:5432/sugbi_test?user=sugbi&password=spassword"}
