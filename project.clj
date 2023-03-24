@@ -17,6 +17,7 @@
                  [conman "0.9.5"]
                  [cprop "0.1.19"]
                  [day8.re-frame/http-fx "0.2.4"]
+                 [dev.weavejester/medley "1.6.0"]
                  [expound "0.9.0"]
                  [funcool/struct "1.4.0"]
                  [json-html "0.4.7"]

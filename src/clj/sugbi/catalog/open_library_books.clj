@@ -1,6 +1,8 @@
 (ns sugbi.catalog.open-library-books
  (:require
-  [clj-http.client :as client]))
+  [camel-snake-kebab.core :as csk]
+  [clj-http.client :as client]
+  [medley.core :as medley]))
 
 
 (def open-library-url
@@ -17,7 +19,8 @@
   (let [book-url (book-by-isbn-url isbn)]
     (-> book-url
         (client/get {:as :json})
-        :body)))
+        :body
+        (#(medley/map-keys csk/->kebab-case %)))))
 
 
 (defn book-info
