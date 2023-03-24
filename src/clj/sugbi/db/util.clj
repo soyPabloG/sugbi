@@ -1,4 +1,4 @@
-(ns sugbi.db.utils)
+(ns sugbi.db.util)
 
 (defn aggregate-field
   [rows field-name aggregate-field-name]

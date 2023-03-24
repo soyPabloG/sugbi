@@ -2,7 +2,7 @@
  (:require
   [conman.core :as conman]
   [sugbi.db.core :as db]
-  [sugbi.db.utils :as db.utils]))
+  [sugbi.db.util :as db.util]))
 
 (conman/bind-connection db/*db* "sql/catalog.sql")
 
@@ -10,11 +10,11 @@
   [title]
   (let [result (search {:title     title
                         :full-name true})]
-    (db.utils/aggregate-field result :full_name :authors-full-name)))
+    (db.util/aggregate-field result :full_name :authors-full-name)))
 
 (defn get-books
   []
   (->> (get-books {})
        (group-by :title)
        vals
-       (map #(db.utils/aggregate-field % :full_name :authors-full-name))))
+       (map #(db.util/aggregate-field % :full_name :authors-full-name))))
