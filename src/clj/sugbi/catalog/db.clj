@@ -8,7 +8,7 @@
 
 (defn search-book
   [title]
-  (let [result (search {:title     title
+  (let [result (search {:title     (str "%" title "%")
                         :full-name true})]
     (db.util/aggregate-field result :full_name :authors-full-name)))
 

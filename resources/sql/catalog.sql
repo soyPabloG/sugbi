@@ -20,7 +20,7 @@ from catalog.book
   (str "join catalog.book_author using (book_id)\n"
        "join catalog.author using (author_id)"))
 ~*/
-where title = :title;
+where title like :title;
 
 -- :name get-books :? :*
 select title, full_name
