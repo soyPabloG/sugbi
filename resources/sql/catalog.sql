@@ -3,7 +3,7 @@ insert into catalog.book (title, isbn) values (:title, :isbn)
 returning *;
 
 -- :name delete-book! :! :n
-delete from catalog.book where title = :title;
+delete from catalog.book where isbn = :isbn;
 
 -- :name search :? :*
 select isbn, true as "available"
