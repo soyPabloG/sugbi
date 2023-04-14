@@ -75,4 +75,16 @@
                    :responses  {200 {:body some?}}
                    :handler    (fn [{{{:keys [isbn]} :body} :parameters}]
                                  {:status 200
-                                  :body   {:deleted (catalog.db/delete-book! {:isbn isbn})}})}}]]]])
+                                  :body   {:deleted (catalog.db/delete-book! {:isbn isbn})}})}}]
+     ["/:isbn" {:get {:summary    "get a book info by its isbn"
+                      :parameters {:path {:isbn string?}}
+                      :responses  {200 {:body some?}}
+                      :handler    (fn [{{{:keys [isbn]} :path} :parameters}]
+                                    {:status 200
+                                     :body   (catalog.core/get-book
+                                              isbn
+                                              #{:title               :full-title
+                                                :subtitle            :publishers
+                                                :publish-date        :weight
+                                                :physical-dimensions :genre
+                                                :subjects            :number-of-pages})})}}]]]])

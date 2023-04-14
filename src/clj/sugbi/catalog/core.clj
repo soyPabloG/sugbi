@@ -13,6 +13,14 @@
        (map (fn [[x y]] (merge x y)))))
 
 
+(defn get-book
+  [isbn fields]
+  (if-let [db-book (db/get-book {:isbn isbn})]
+    (let [open-library-book-info (olb/book-info isbn fields)]
+      (merge db-book open-library-book-info))
+    {}))
+
+
 (defn get-books
   [fields]
   (let [db-books                (db/get-books {})

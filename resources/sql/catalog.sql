@@ -10,6 +10,11 @@ select isbn, true as "available"
 from catalog.book
 where title like :title;
 
+-- :name get-book :? :1
+select isbn, true as "available"
+from catalog.book
+where isbn = :isbn
+
 -- :name get-books :? :*
 select isbn
 from catalog.book;
