@@ -25,11 +25,11 @@
 
 (defn book-info
   [isbn requested-fields]
-  (let [relevant-fields #{:title               :full_title
+  (let [relevant-fields #{:title               :full-title
                           :subtitle            :publishers
-                          :publish_date        :weight
-                          :physical_dimensions :genre
-                          :subjects            :number_of_pages}
+                          :publish-date        :weight
+                          :physical-dimensions :genre
+                          :subjects            :number-of-pages}
         raw-info        (raw-book-info isbn)]
     (-> raw-info
         (select-keys relevant-fields)
