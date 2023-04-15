@@ -68,8 +68,8 @@
                    :responses  {200 {:body some?}}
                    :handler    (fn [{{{:keys [isbn title]} :body} :parameters}]
                                  {:status 200
-                                  :body   (catalog.core/insert-book! {:isbn  isbn
-                                                                      :title title})})}
+                                  :body   (catalog.db/insert-book! {:isbn  isbn
+                                                                    :title title})})}
           :delete {:summary    "delete a book title of the catalog"
                    :parameters {:body {:isbn string?}}
                    :responses  {200 {:body some?}}
