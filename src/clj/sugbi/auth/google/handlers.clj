@@ -2,7 +2,8 @@
   (:require
    [ring.util.http-response :as response]
    [sugbi.auth.google.core :as auth.google]
-   [sugbi.config :refer [env]]))
+   [sugbi.config :refer [env]]
+   [sugbi.user-management.core :as user-management.core]))
 
 
 (defn authorize-handler
@@ -18,13 +19,14 @@
 (defn callback-handler
   [callback-uri]
   (fn [request]
-    (let [code         (get-in request [:params :code])
-          access-token (auth.google/oauth-access-token
-                        (:google/client env)
-                        (:google/secret env)
-                        code
-                        callback-uri
-                        (:scopes-supported auth.google/openid-configuration))
-          user-info    (auth.google/user-info access-token)]
+    (let [code          (get-in request [:params :code])
+          access-token  (auth.google/oauth-access-token
+                         (:google/client env)
+                         (:google/secret env)
+                         code
+                         callback-uri
+                         (:scopes-supported auth.google/openid-configuration))
+          user-info     (auth.google/user-info access-token)
+          is-librarian? (user-management.core/is-librarian? (:sub user-info))]
       (assoc (response/found (str "http://" (get-in request [:headers "host"]) "/api/api-docs/index.html"))
-             :session (merge (:session request) user-info)))))
+             :session (merge (:session request) user-info {:is-librarian? is-librarian?})))))
