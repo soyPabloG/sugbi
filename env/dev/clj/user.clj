@@ -36,9 +36,7 @@
   "Restarts database."
   []
   (mount/stop #'sugbi.db.core/*db*)
-  (mount/start #'sugbi.db.core/*db*)
-  (binding [*ns* (the-ns 'sugbi.db.core)]
-    (conman/bind-connection sugbi.db.core/*db* "sql/queries.sql")))
+  (mount/start #'sugbi.db.core/*db*))
 
 (defn reset-db
   "Resets database."
