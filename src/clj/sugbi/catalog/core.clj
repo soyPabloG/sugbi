@@ -13,6 +13,9 @@
        (map (fn [[x y]] (merge x y)))))
 
 
+(def available-fields olb/relevant-fields)
+
+
 (defn get-book
   [isbn fields]
   (if-let [db-book (db/get-book {:isbn isbn})]

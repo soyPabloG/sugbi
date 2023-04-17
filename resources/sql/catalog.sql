@@ -8,7 +8,7 @@ delete from catalog.book where isbn = :isbn;
 -- :name search :? :*
 select isbn, true as "available"
 from catalog.book
-where title like :title;
+where lower(title) like :title;
 
 -- :name get-book :? :1
 select isbn, true as "available"
@@ -16,5 +16,5 @@ from catalog.book
 where isbn = :isbn
 
 -- :name get-books :? :*
-select isbn
+select isbn, true as "available"
 from catalog.book;
