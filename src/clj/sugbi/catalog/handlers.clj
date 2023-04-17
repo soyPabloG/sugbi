@@ -22,7 +22,7 @@
   (let [{:keys [_isbn _title]
          :as book-info} (get-in request [:parameters :body])]
     (response/ok
-     (catalog.db/insert-book! book-info))))
+     (select-keys (catalog.db/insert-book! book-info) [:isbn :title]))))
 
 
 (defn delete-book!
@@ -35,7 +35,8 @@
 (defn get-book
   [request]
   (let [isbn (get-in request [:parameters :path :isbn])]
-    (response/ok
-     (catalog.core/get-book
-      isbn
-      catalog.core/available-fields))))
+    (if-let [book-info (catalog.core/get-book
+                        isbn
+                        catalog.core/available-fields)]
+      (response/ok book-info)
+      (response/not-found {:isbn isbn}))))
