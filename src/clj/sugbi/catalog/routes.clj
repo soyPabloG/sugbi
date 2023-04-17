@@ -32,8 +32,10 @@
                 :responses  {200 {:body [book-info-spec]}}
                 :handler    catalog.handlers/search-books}
          :post {:summary    "add a book title to the catalog"
-                :parameters {:body basic-book-info-spec}
-                :responses  {200 {:body basic-book-info-spec}}
+                :parameters {:header {:cookie string?}
+                             :body   basic-book-info-spec}
+                :responses  {200 {:body basic-book-info-spec}
+                             405 {:body {:message string?}}}
                 :handler    catalog.handlers/insert-book!}}]
     ["/:isbn" {:get    {:summary    "get a book info by its isbn"
                         :parameters {:path {:isbn string?}}
@@ -41,6 +43,8 @@
                                      404 {:body {:isbn string?}}}
                         :handler    catalog.handlers/get-book}
                :delete {:summary    "delete a book title of the catalog"
-                        :parameters {:path {:isbn string?}}
-                        :responses  {200 {:body {:deleted int?}}}
+                        :parameters {:header {:cookie string?}
+                                     :path   {:isbn string?}}
+                        :responses  {200 {:body {:deleted int?}}
+                                     405 {:body {:message string?}}}
                         :handler    catalog.handlers/delete-book!}}]]])
