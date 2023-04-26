@@ -34,8 +34,9 @@ GROUP BY user_id;
 
 -- :name book-stock :? :1
 SELECT title, COUNT(*) AS "total_copies"
-FROM catalog.book
-WHERE title = :book-title;
+FROM catalog.book_item
+WHERE lib_id = :book-id
+GROUP BY lib_id;
 
 -- :name is-late :? :1
 SELECT TRUE AS "is_late"
