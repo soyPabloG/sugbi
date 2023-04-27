@@ -48,10 +48,12 @@
 (defn calc-bmi
   [{:keys [height weight bmi] :as data}]
   (let [h (/ height 100)]
-    (assoc data :bmi (/ weight (* h h)))))
+    (if (nil? bmi)
+      (assoc data :bmi (/ weight (* h h)))
+      (assoc data :weight (* bmi h h)))))
 
 (defn slider
-  [atom param value min max]
+  [atom param value min max invalidates]
   [:input {:type      :range
            :value     value
            :min       min
@@ -61,23 +63,34 @@
                           (swap! atom (fn [data]
                                         (-> data
                                             (assoc param new-value)
+                                            (dissoc invalidates)
                                             calc-bmi)))))}])
+
+(defn color-diagnose
+  [bmi]
+  (cond
+    (< bmi 18.5) [:orange "underweight"]
+    (< bmi 25)   [:inherit "normal"]
+    (< bmi 30)   [:orange "overweight"]
+    :else        [:red "obese"]))
 
 (defn bmi-component []
   (let [bmi-data (r/atom (calc-bmi {:height 180 :weight 80}))]
     (fn []
-      (let [{:keys [height weight bmi]} @bmi-data]
+      (let [{:keys [height weight bmi]} @bmi-data
+            [color diagnose]            (color-diagnose bmi)]
         [:div
          [:h1 "BMI calculator"]
          [:div
           "Height: " (int height) "cm " [:br]
-          [slider bmi-data :height height 100 220]]
+          [slider bmi-data :height height 100 220 :bmi]]
          [:div
           "Weight: " (int weight) "kg " [:br]
-          [slider bmi-data :weight weight 30 150]]
+          [slider bmi-data :weight weight 30 150 :bmi]]
          [:div
           "BMI " (int bmi) " " [:br]
-          [slider bmi-data :bmi bmi 10 50]]]))))
+          [:span {:style {:color color}} diagnose] [:br]
+          [slider bmi-data :bmi bmi 10 50 :weight]]]))))
 
 
 (defn page []
