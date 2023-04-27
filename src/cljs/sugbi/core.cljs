@@ -45,11 +45,46 @@
    (when-let [docs @(rf/subscribe [:docs])]
      [:div {:dangerouslySetInnerHTML {:__html (md->html docs)}}])])
 
+(defn calc-bmi
+  [{:keys [height weight bmi] :as data}]
+  (let [h (/ height 100)]
+    (assoc data :bmi (/ weight (* h h)))))
+
+(defn slider
+  [atom param value min max]
+  [:input {:type      :range
+           :value     value
+           :min       min
+           :max       max
+           :on-change (fn [e]
+                        (let [new-value (js/parseInt (-> e .-target .-value))]
+                          (swap! atom (fn [data]
+                                        (-> data
+                                            (assoc param new-value)
+                                            calc-bmi)))))}])
+
+(defn bmi-component []
+  (let [bmi-data (r/atom (calc-bmi {:height 180 :weight 80}))]
+    (fn []
+      (let [{:keys [height weight bmi]} @bmi-data]
+        [:div
+         [:h1 "BMI calculator"]
+         [:div
+          "Height: " (int height) "cm " [:br]
+          [slider bmi-data :height height 100 220]]
+         [:div
+          "Weight: " (int weight) "kg " [:br]
+          [slider bmi-data :weight weight 30 150]]
+         [:div
+          "BMI " (int bmi) " " [:br]
+          [slider bmi-data :bmi bmi 10 50]]]))))
+
+
 (defn page []
   (if-let [page @(rf/subscribe [:common/page])]
     [:div
      [navbar]
-     [page]]))
+     [bmi-component]]))
 
 (defn navigate! [match _]
   (rf/dispatch [:common/navigate match]))
