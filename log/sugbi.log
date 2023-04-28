@@ -1,0 +1,299 @@
+2023-04-27 18:36:03,486 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider 
+2023-04-27 18:36:04,395 [main] INFO  io.undertow - starting server: Undertow - 2.2.4.Final 
+2023-04-27 18:36:04,402 [main] INFO  org.xnio - XNIO version 3.8.0.Final 
+2023-04-27 18:36:04,528 [main] INFO  org.jboss.threads - JBoss Threads version 3.1.0.Final 
+2023-04-27 18:36:04,575 [main] DEBUG io.undertow - Configuring listener with protocol HTTP for interface 0.0.0.0 and port 9630 
+2023-04-27 18:37:20,623 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] INFO  sugbi.env - 
+-=[sugbi started successfully using the development profile]=- 
+2023-04-27 18:37:21,533 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] INFO  luminus.http-server - server started on port 3000 
+2023-04-27 18:37:30,731 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] INFO  migratus.core - Starting migrations 
+2023-04-27 18:37:30,789 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] DEBUG migratus.migrations - Looking for migrations in #object[java.io.File 0x45c76333 /home/gaeldelameme/Ciencias/Ingeniería de Software/Prácticas/Práctica02/sugbi/resources/migrations] 
+2023-04-27 18:37:30,792 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] WARN  migratus.migrations - skipping: '20230426030416-lendings.up.sql~' migrations must match pattern: ^(\d+)-([^\.]+)((?:\.[^\.]+)+)$ 
+2023-04-27 18:37:30,794 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] WARN  migratus.migrations - skipping: '20230426030416-lendings.down.sql~' migrations must match pattern: ^(\d+)-([^\.]+)((?:\.[^\.]+)+)$ 
+2023-04-27 18:37:30,800 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] INFO  migratus.core - Running down for [20230426030416 20230417032642 20230321184035 20230228002443] 
+2023-04-27 18:37:30,801 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] INFO  migratus.core - Down 20230426030416-lendings 
+2023-04-27 18:37:30,804 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] INFO  migratus.database - Connection is  {:connection #object[org.postgresql.jdbc.PgConnection 0x1c221d19 org.postgresql.jdbc.PgConnection@1c221d19]} Config is {:store :database, :db {:connection-uri uri-censored}} 
+2023-04-27 18:37:30,821 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] DEBUG migratus.migration.sql - found 2 down migrations 
+2023-04-27 18:37:30,841 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] DEBUG migratus.database - marking 20230426030416 not complete 
+2023-04-27 18:37:30,848 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] INFO  migratus.core - Down 20230417032642-adds-librarians 
+2023-04-27 18:37:30,849 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] INFO  migratus.database - Connection is  {:connection #object[org.postgresql.jdbc.PgConnection 0x1c221d19 org.postgresql.jdbc.PgConnection@1c221d19]} Config is {:store :database, :db {:connection-uri uri-censored}} 
+2023-04-27 18:37:30,854 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] DEBUG migratus.migration.sql - found 2 down migrations 
+2023-04-27 18:37:30,858 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] DEBUG migratus.database - marking 20230417032642 not complete 
+2023-04-27 18:37:30,861 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] INFO  migratus.core - Down 20230321184035-removes-catalog-book-info 
+2023-04-27 18:37:30,862 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] INFO  migratus.database - Connection is  {:connection #object[org.postgresql.jdbc.PgConnection 0x1c221d19 org.postgresql.jdbc.PgConnection@1c221d19]} Config is {:store :database, :db {:connection-uri uri-censored}} 
+2023-04-27 18:37:30,866 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] DEBUG migratus.migration.sql - found 3 down migrations 
+2023-04-27 18:37:30,885 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] DEBUG migratus.database - marking 20230321184035 not complete 
+2023-04-27 18:37:30,889 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] INFO  migratus.core - Down 20230228002443-initial-catalog-model 
+2023-04-27 18:37:30,890 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] INFO  migratus.database - Connection is  {:connection #object[org.postgresql.jdbc.PgConnection 0x1c221d19 org.postgresql.jdbc.PgConnection@1c221d19]} Config is {:store :database, :db {:connection-uri uri-censored}} 
+2023-04-27 18:37:30,894 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] DEBUG migratus.migration.sql - found 4 down migrations 
+2023-04-27 18:37:30,903 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] DEBUG migratus.database - marking 20230228002443 not complete 
+2023-04-27 18:37:30,906 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] INFO  migratus.core - Ending migrations 
+2023-04-27 18:37:30,907 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] INFO  migratus.core - Starting migrations 
+2023-04-27 18:37:30,930 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] DEBUG migratus.migrations - Looking for migrations in #object[java.io.File 0x197d0ae6 /home/gaeldelameme/Ciencias/Ingeniería de Software/Prácticas/Práctica02/sugbi/resources/migrations] 
+2023-04-27 18:37:30,931 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] WARN  migratus.migrations - skipping: '20230426030416-lendings.up.sql~' migrations must match pattern: ^(\d+)-([^\.]+)((?:\.[^\.]+)+)$ 
+2023-04-27 18:37:30,932 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] WARN  migratus.migrations - skipping: '20230426030416-lendings.down.sql~' migrations must match pattern: ^(\d+)-([^\.]+)((?:\.[^\.]+)+)$ 
+2023-04-27 18:37:30,935 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] INFO  migratus.core - Running up for [20230228002443 20230321184035 20230417032642 20230426030416] 
+2023-04-27 18:37:30,937 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] INFO  migratus.core - Up 20230228002443-initial-catalog-model 
+2023-04-27 18:37:30,939 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] INFO  migratus.database - Connection is  {:connection #object[org.postgresql.jdbc.PgConnection 0x1973287 org.postgresql.jdbc.PgConnection@1973287]} Config is {:store :database, :db {:connection-uri uri-censored}} 
+2023-04-27 18:37:30,948 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] DEBUG migratus.migration.sql - found 4 up migrations 
+2023-04-27 18:37:30,972 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] DEBUG migratus.database - marking 20230228002443 complete 
+2023-04-27 18:37:30,979 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] INFO  migratus.core - Up 20230321184035-removes-catalog-book-info 
+2023-04-27 18:37:30,980 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] INFO  migratus.database - Connection is  {:connection #object[org.postgresql.jdbc.PgConnection 0x1973287 org.postgresql.jdbc.PgConnection@1973287]} Config is {:store :database, :db {:connection-uri uri-censored}} 
+2023-04-27 18:37:30,985 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] DEBUG migratus.migration.sql - found 3 up migrations 
+2023-04-27 18:37:30,994 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] DEBUG migratus.database - marking 20230321184035 complete 
+2023-04-27 18:37:30,998 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] INFO  migratus.core - Up 20230417032642-adds-librarians 
+2023-04-27 18:37:30,998 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] INFO  migratus.database - Connection is  {:connection #object[org.postgresql.jdbc.PgConnection 0x1973287 org.postgresql.jdbc.PgConnection@1973287]} Config is {:store :database, :db {:connection-uri uri-censored}} 
+2023-04-27 18:37:31,002 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] DEBUG migratus.migration.sql - found 2 up migrations 
+2023-04-27 18:37:31,012 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] DEBUG migratus.database - marking 20230417032642 complete 
+2023-04-27 18:37:31,016 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] INFO  migratus.core - Up 20230426030416-lendings 
+2023-04-27 18:37:31,017 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] INFO  migratus.database - Connection is  {:connection #object[org.postgresql.jdbc.PgConnection 0x1973287 org.postgresql.jdbc.PgConnection@1973287]} Config is {:store :database, :db {:connection-uri uri-censored}} 
+2023-04-27 18:37:31,024 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] DEBUG migratus.migration.sql - found 4 up migrations 
+2023-04-27 18:37:31,042 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] DEBUG migratus.database - marking 20230426030416 complete 
+2023-04-27 18:37:31,048 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] INFO  migratus.core - Ending migrations 
+2023-04-27 22:02:17,759 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] INFO  migratus.core - Starting migrations 
+2023-04-27 22:02:17,780 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] DEBUG migratus.migrations - Looking for migrations in #object[java.io.File 0x3029ae33 /home/gaeldelameme/Ciencias/Ingeniería de Software/Prácticas/Práctica02/sugbi/resources/migrations] 
+2023-04-27 22:02:17,781 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] WARN  migratus.migrations - skipping: '20230426030416-lendings.up.sql~' migrations must match pattern: ^(\d+)-([^\.]+)((?:\.[^\.]+)+)$ 
+2023-04-27 22:02:17,782 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] WARN  migratus.migrations - skipping: '20230426030416-lendings.down.sql~' migrations must match pattern: ^(\d+)-([^\.]+)((?:\.[^\.]+)+)$ 
+2023-04-27 22:02:17,783 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] INFO  migratus.core - Running down for [20230426030416 20230417032642 20230321184035 20230228002443] 
+2023-04-27 22:02:17,784 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] INFO  migratus.core - Down 20230426030416-lendings 
+2023-04-27 22:02:17,784 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] INFO  migratus.database - Connection is  {:connection #object[org.postgresql.jdbc.PgConnection 0x13a72a6a org.postgresql.jdbc.PgConnection@13a72a6a]} Config is {:store :database, :db {:connection-uri uri-censored}} 
+2023-04-27 22:02:17,789 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] DEBUG migratus.migration.sql - found 2 down migrations 
+2023-04-27 22:02:17,794 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] DEBUG migratus.database - marking 20230426030416 not complete 
+2023-04-27 22:02:17,796 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] INFO  migratus.core - Down 20230417032642-adds-librarians 
+2023-04-27 22:02:17,797 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] INFO  migratus.database - Connection is  {:connection #object[org.postgresql.jdbc.PgConnection 0x13a72a6a org.postgresql.jdbc.PgConnection@13a72a6a]} Config is {:store :database, :db {:connection-uri uri-censored}} 
+2023-04-27 22:02:17,800 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] DEBUG migratus.migration.sql - found 2 down migrations 
+2023-04-27 22:02:17,803 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] DEBUG migratus.database - marking 20230417032642 not complete 
+2023-04-27 22:02:17,805 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] INFO  migratus.core - Down 20230321184035-removes-catalog-book-info 
+2023-04-27 22:02:17,806 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] INFO  migratus.database - Connection is  {:connection #object[org.postgresql.jdbc.PgConnection 0x13a72a6a org.postgresql.jdbc.PgConnection@13a72a6a]} Config is {:store :database, :db {:connection-uri uri-censored}} 
+2023-04-27 22:02:17,808 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] DEBUG migratus.migration.sql - found 3 down migrations 
+2023-04-27 22:02:17,819 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] DEBUG migratus.database - marking 20230321184035 not complete 
+2023-04-27 22:02:17,821 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] INFO  migratus.core - Down 20230228002443-initial-catalog-model 
+2023-04-27 22:02:17,822 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] INFO  migratus.database - Connection is  {:connection #object[org.postgresql.jdbc.PgConnection 0x13a72a6a org.postgresql.jdbc.PgConnection@13a72a6a]} Config is {:store :database, :db {:connection-uri uri-censored}} 
+2023-04-27 22:02:17,825 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] DEBUG migratus.migration.sql - found 4 down migrations 
+2023-04-27 22:02:17,836 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] ERROR migratus.migration.sql - failed to execute command:
+ drop schema catalog;
+ 
+2023-04-27 22:02:17,836 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] ERROR migratus.migration.sql - ERROR: cannot drop schema catalog because other objects depend on it
+  Detail: function catalog.update_book_copies() depends on schema catalog
+  Hint: Use DROP ... CASCADE to drop the dependent objects too. 
+2023-04-27 22:02:17,838 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] INFO  migratus.core - Ending migrations 
+2023-04-27 22:06:20,986 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] INFO  migratus.core - Starting migrations 
+2023-04-27 22:06:21,006 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] DEBUG migratus.migrations - Looking for migrations in #object[java.io.File 0x40f79d6f /home/gaeldelameme/Ciencias/Ingeniería de Software/Prácticas/Práctica02/sugbi/resources/migrations] 
+2023-04-27 22:06:21,007 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] WARN  migratus.migrations - skipping: '20230426030416-lendings.up.sql~' migrations must match pattern: ^(\d+)-([^\.]+)((?:\.[^\.]+)+)$ 
+2023-04-27 22:06:21,008 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] WARN  migratus.migrations - skipping: '20230426030416-lendings.down.sql~' migrations must match pattern: ^(\d+)-([^\.]+)((?:\.[^\.]+)+)$ 
+2023-04-27 22:06:21,010 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] INFO  migratus.core - Running down for [20230228002443] 
+2023-04-27 22:06:21,010 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] INFO  migratus.core - Down 20230228002443-initial-catalog-model 
+2023-04-27 22:06:21,011 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] INFO  migratus.database - Connection is  {:connection #object[org.postgresql.jdbc.PgConnection 0x161f4267 org.postgresql.jdbc.PgConnection@161f4267]} Config is {:store :database, :db {:connection-uri uri-censored}} 
+2023-04-27 22:06:21,015 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] DEBUG migratus.migration.sql - found 4 down migrations 
+2023-04-27 22:06:21,021 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] ERROR migratus.migration.sql - failed to execute command:
+ drop schema catalog;
+ 
+2023-04-27 22:06:21,021 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] ERROR migratus.migration.sql - ERROR: cannot drop schema catalog because other objects depend on it
+  Detail: function catalog.update_book_copies() depends on schema catalog
+  Hint: Use DROP ... CASCADE to drop the dependent objects too. 
+2023-04-27 22:06:21,023 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] INFO  migratus.core - Ending migrations 
+2023-04-27 22:07:47,618 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] INFO  migratus.core - Starting migrations 
+2023-04-27 22:07:47,637 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] DEBUG migratus.migrations - Looking for migrations in #object[java.io.File 0x505662e6 /home/gaeldelameme/Ciencias/Ingeniería de Software/Prácticas/Práctica02/sugbi/resources/migrations] 
+2023-04-27 22:07:47,637 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] WARN  migratus.migrations - skipping: '20230426030416-lendings.up.sql~' migrations must match pattern: ^(\d+)-([^\.]+)((?:\.[^\.]+)+)$ 
+2023-04-27 22:07:47,638 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] WARN  migratus.migrations - skipping: '20230426030416-lendings.down.sql~' migrations must match pattern: ^(\d+)-([^\.]+)((?:\.[^\.]+)+)$ 
+2023-04-27 22:07:47,639 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] INFO  migratus.core - Running down for [20230228002443] 
+2023-04-27 22:07:47,640 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] INFO  migratus.core - Down 20230228002443-initial-catalog-model 
+2023-04-27 22:07:47,640 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] INFO  migratus.database - Connection is  {:connection #object[org.postgresql.jdbc.PgConnection 0x3b65eb95 org.postgresql.jdbc.PgConnection@3b65eb95]} Config is {:store :database, :db {:connection-uri uri-censored}} 
+2023-04-27 22:07:47,644 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] DEBUG migratus.migration.sql - found 4 down migrations 
+2023-04-27 22:07:47,649 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] ERROR migratus.migration.sql - failed to execute command:
+ drop schema catalog;
+ 
+2023-04-27 22:07:47,649 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] ERROR migratus.migration.sql - ERROR: cannot drop schema catalog because other objects depend on it
+  Detail: function catalog.update_book_copies() depends on schema catalog
+  Hint: Use DROP ... CASCADE to drop the dependent objects too. 
+2023-04-27 22:07:47,650 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] INFO  migratus.core - Ending migrations 
+2023-04-27 22:10:30,616 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] INFO  migratus.core - Starting migrations 
+2023-04-27 22:10:30,635 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] DEBUG migratus.migrations - Looking for migrations in #object[java.io.File 0x55e48d85 /home/gaeldelameme/Ciencias/Ingeniería de Software/Prácticas/Práctica02/sugbi/resources/migrations] 
+2023-04-27 22:10:30,636 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] WARN  migratus.migrations - skipping: '20230426030416-lendings.up.sql~' migrations must match pattern: ^(\d+)-([^\.]+)((?:\.[^\.]+)+)$ 
+2023-04-27 22:10:30,636 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] WARN  migratus.migrations - skipping: '20230426030416-lendings.down.sql~' migrations must match pattern: ^(\d+)-([^\.]+)((?:\.[^\.]+)+)$ 
+2023-04-27 22:10:30,638 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] INFO  migratus.core - Running down for [20230228002443] 
+2023-04-27 22:10:30,638 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] INFO  migratus.core - Down 20230228002443-initial-catalog-model 
+2023-04-27 22:10:30,638 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] INFO  migratus.database - Connection is  {:connection #object[org.postgresql.jdbc.PgConnection 0x4c3c4a6b org.postgresql.jdbc.PgConnection@4c3c4a6b]} Config is {:store :database, :db {:connection-uri uri-censored}} 
+2023-04-27 22:10:30,642 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] DEBUG migratus.migration.sql - found 4 down migrations 
+2023-04-27 22:10:30,646 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] ERROR migratus.migration.sql - failed to execute command:
+ drop schema catalog;
+ 
+2023-04-27 22:10:30,646 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] ERROR migratus.migration.sql - ERROR: cannot drop schema catalog because other objects depend on it
+  Detail: function catalog.update_book_copies() depends on schema catalog
+  Hint: Use DROP ... CASCADE to drop the dependent objects too. 
+2023-04-27 22:10:30,648 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] INFO  migratus.core - Ending migrations 
+2023-04-27 22:13:51,411 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] INFO  migratus.core - Starting migrations 
+2023-04-27 22:13:51,467 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] DEBUG migratus.migrations - Looking for migrations in #object[java.io.File 0x692e16ef /home/gaeldelameme/Ciencias/Ingeniería de Software/Prácticas/Práctica02/sugbi/resources/migrations] 
+2023-04-27 22:13:51,468 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] WARN  migratus.migrations - skipping: '20230426030416-lendings.up.sql~' migrations must match pattern: ^(\d+)-([^\.]+)((?:\.[^\.]+)+)$ 
+2023-04-27 22:13:51,470 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] WARN  migratus.migrations - skipping: '20230426030416-lendings.down.sql~' migrations must match pattern: ^(\d+)-([^\.]+)((?:\.[^\.]+)+)$ 
+2023-04-27 22:13:51,473 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] INFO  migratus.core - Running down for [20230228002443] 
+2023-04-27 22:13:51,474 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] INFO  migratus.core - Down 20230228002443-initial-catalog-model 
+2023-04-27 22:13:51,475 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] INFO  migratus.database - Connection is  {:connection #object[org.postgresql.jdbc.PgConnection 0x2cd8d6dc org.postgresql.jdbc.PgConnection@2cd8d6dc]} Config is {:store :database, :db {:connection-uri uri-censored}} 
+2023-04-27 22:13:51,483 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] DEBUG migratus.migration.sql - found 4 down migrations 
+2023-04-27 22:13:51,489 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] ERROR migratus.migration.sql - failed to execute command:
+ drop schema catalog;
+ 
+2023-04-27 22:13:51,489 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] ERROR migratus.migration.sql - ERROR: cannot drop schema catalog because other objects depend on it
+  Detail: function catalog.update_book_copies() depends on schema catalog
+  Hint: Use DROP ... CASCADE to drop the dependent objects too. 
+2023-04-27 22:13:51,491 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] INFO  migratus.core - Ending migrations 
+2023-04-27 22:14:08,711 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] INFO  migratus.core - Starting migrations 
+2023-04-27 22:14:08,730 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] DEBUG migratus.migrations - Looking for migrations in #object[java.io.File 0x7bb1aacd /home/gaeldelameme/Ciencias/Ingeniería de Software/Prácticas/Práctica02/sugbi/resources/migrations] 
+2023-04-27 22:14:08,730 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] WARN  migratus.migrations - skipping: '20230426030416-lendings.up.sql~' migrations must match pattern: ^(\d+)-([^\.]+)((?:\.[^\.]+)+)$ 
+2023-04-27 22:14:08,731 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] WARN  migratus.migrations - skipping: '20230426030416-lendings.down.sql~' migrations must match pattern: ^(\d+)-([^\.]+)((?:\.[^\.]+)+)$ 
+2023-04-27 22:14:08,732 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] INFO  migratus.core - Running down for [20230228002443] 
+2023-04-27 22:14:08,732 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] INFO  migratus.core - Down 20230228002443-initial-catalog-model 
+2023-04-27 22:14:08,732 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] INFO  migratus.database - Connection is  {:connection #object[org.postgresql.jdbc.PgConnection 0x5fb60a8d org.postgresql.jdbc.PgConnection@5fb60a8d]} Config is {:store :database, :db {:connection-uri uri-censored}} 
+2023-04-27 22:14:08,736 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] DEBUG migratus.migration.sql - found 4 down migrations 
+2023-04-27 22:14:08,740 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] ERROR migratus.migration.sql - failed to execute command:
+ drop schema catalog;
+ 
+2023-04-27 22:14:08,740 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] ERROR migratus.migration.sql - ERROR: cannot drop schema catalog because other objects depend on it
+  Detail: function catalog.update_book_copies() depends on schema catalog
+  Hint: Use DROP ... CASCADE to drop the dependent objects too. 
+2023-04-27 22:14:08,741 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] INFO  migratus.core - Ending migrations 
+2023-04-27 22:14:25,770 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] INFO  migratus.core - Starting migrations 
+2023-04-27 22:14:25,792 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] DEBUG migratus.migrations - Looking for migrations in #object[java.io.File 0x2da5701a /home/gaeldelameme/Ciencias/Ingeniería de Software/Prácticas/Práctica02/sugbi/resources/migrations] 
+2023-04-27 22:14:25,792 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] WARN  migratus.migrations - skipping: '20230426030416-lendings.up.sql~' migrations must match pattern: ^(\d+)-([^\.]+)((?:\.[^\.]+)+)$ 
+2023-04-27 22:14:25,793 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] WARN  migratus.migrations - skipping: '20230426030416-lendings.down.sql~' migrations must match pattern: ^(\d+)-([^\.]+)((?:\.[^\.]+)+)$ 
+2023-04-27 22:14:25,794 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] INFO  migratus.core - Running down for [20230228002443] 
+2023-04-27 22:14:25,794 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] INFO  migratus.core - Down 20230228002443-initial-catalog-model 
+2023-04-27 22:14:25,795 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] INFO  migratus.database - Connection is  {:connection #object[org.postgresql.jdbc.PgConnection 0x1db51f5e org.postgresql.jdbc.PgConnection@1db51f5e]} Config is {:store :database, :db {:connection-uri uri-censored}} 
+2023-04-27 22:14:25,799 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] DEBUG migratus.migration.sql - found 4 down migrations 
+2023-04-27 22:14:25,803 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] ERROR migratus.migration.sql - failed to execute command:
+ drop schema catalog;
+ 
+2023-04-27 22:14:25,803 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] ERROR migratus.migration.sql - ERROR: cannot drop schema catalog because other objects depend on it
+  Detail: function catalog.update_book_copies() depends on schema catalog
+  Hint: Use DROP ... CASCADE to drop the dependent objects too. 
+2023-04-27 22:14:25,805 [nREPL-session-2e26d4e7-3f4a-42ca-bfad-295566a037b2] INFO  migratus.core - Ending migrations 
+2023-04-27 22:14:48,902 [Thread-1] INFO  io.undertow - stopping server: Undertow - 2.2.4.Final 
+2023-04-27 22:37:13,093 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider 
+2023-04-27 22:37:13,750 [main] INFO  io.undertow - starting server: Undertow - 2.2.4.Final 
+2023-04-27 22:37:13,758 [main] INFO  org.xnio - XNIO version 3.8.0.Final 
+2023-04-27 22:37:13,838 [main] INFO  org.jboss.threads - JBoss Threads version 3.1.0.Final 
+2023-04-27 22:37:13,878 [main] DEBUG io.undertow - Configuring listener with protocol HTTP for interface 0.0.0.0 and port 9630 
+2023-04-27 22:37:25,828 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] INFO  sugbi.env - 
+-=[sugbi started successfully using the development profile]=- 
+2023-04-27 22:37:26,562 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] INFO  luminus.http-server - server started on port 3000 
+2023-04-27 22:37:32,021 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] INFO  migratus.core - Starting migrations 
+2023-04-27 22:37:32,055 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] DEBUG migratus.migrations - Looking for migrations in #object[java.io.File 0x2619fd62 /home/gaeldelameme/Ciencias/Ingeniería de Software/Prácticas/Práctica02/sugbi/resources/migrations] 
+2023-04-27 22:37:32,058 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] WARN  migratus.migrations - skipping: '20230426030416-lendings.up.sql~' migrations must match pattern: ^(\d+)-([^\.]+)((?:\.[^\.]+)+)$ 
+2023-04-27 22:37:32,059 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] WARN  migratus.migrations - skipping: '20230426030416-lendings.down.sql~' migrations must match pattern: ^(\d+)-([^\.]+)((?:\.[^\.]+)+)$ 
+2023-04-27 22:37:32,062 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] INFO  migratus.core - Running down for [20230228002443] 
+2023-04-27 22:37:32,062 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] INFO  migratus.core - Down 20230228002443-initial-catalog-model 
+2023-04-27 22:37:32,063 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] INFO  migratus.database - Connection is  {:connection #object[org.postgresql.jdbc.PgConnection 0x3d2988f1 org.postgresql.jdbc.PgConnection@3d2988f1]} Config is {:store :database, :db {:connection-uri uri-censored}} 
+2023-04-27 22:37:32,074 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] DEBUG migratus.migration.sql - found 4 down migrations 
+2023-04-27 22:37:32,093 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] ERROR migratus.migration.sql - failed to execute command:
+ drop schema catalog;
+ 
+2023-04-27 22:37:32,093 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] ERROR migratus.migration.sql - ERROR: cannot drop schema catalog because other objects depend on it
+  Detail: function catalog.update_book_copies() depends on schema catalog
+  Hint: Use DROP ... CASCADE to drop the dependent objects too. 
+2023-04-27 22:37:32,096 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] INFO  migratus.core - Ending migrations 
+2023-04-27 22:38:04,722 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] INFO  migratus.core - Starting migrations 
+2023-04-27 22:38:04,781 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] DEBUG migratus.migrations - Looking for migrations in #object[java.io.File 0x5aa424dc /home/gaeldelameme/Ciencias/Ingeniería de Software/Prácticas/Práctica02/sugbi/resources/migrations] 
+2023-04-27 22:38:04,782 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] WARN  migratus.migrations - skipping: '20230426030416-lendings.up.sql~' migrations must match pattern: ^(\d+)-([^\.]+)((?:\.[^\.]+)+)$ 
+2023-04-27 22:38:04,784 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] WARN  migratus.migrations - skipping: '20230426030416-lendings.down.sql~' migrations must match pattern: ^(\d+)-([^\.]+)((?:\.[^\.]+)+)$ 
+2023-04-27 22:38:04,788 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] INFO  migratus.core - Running down for [20230228002443] 
+2023-04-27 22:38:04,788 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] INFO  migratus.core - Down 20230228002443-initial-catalog-model 
+2023-04-27 22:38:04,789 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] INFO  migratus.database - Connection is  {:connection #object[org.postgresql.jdbc.PgConnection 0x707c01ce org.postgresql.jdbc.PgConnection@707c01ce]} Config is {:store :database, :db {:connection-uri uri-censored}} 
+2023-04-27 22:38:04,796 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] DEBUG migratus.migration.sql - found 4 down migrations 
+2023-04-27 22:38:04,802 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] ERROR migratus.migration.sql - failed to execute command:
+ drop schema catalog;
+ 
+2023-04-27 22:38:04,803 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] ERROR migratus.migration.sql - ERROR: cannot drop schema catalog because other objects depend on it
+  Detail: function catalog.update_book_copies() depends on schema catalog
+  Hint: Use DROP ... CASCADE to drop the dependent objects too. 
+2023-04-27 22:38:04,805 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] INFO  migratus.core - Ending migrations 
+2023-04-27 22:38:15,297 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] INFO  migratus.core - Starting migrations 
+2023-04-27 22:38:15,319 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] DEBUG migratus.migrations - Looking for migrations in #object[java.io.File 0x6ca0dfc /home/gaeldelameme/Ciencias/Ingeniería de Software/Prácticas/Práctica02/sugbi/resources/migrations] 
+2023-04-27 22:38:15,320 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] WARN  migratus.migrations - skipping: '20230426030416-lendings.up.sql~' migrations must match pattern: ^(\d+)-([^\.]+)((?:\.[^\.]+)+)$ 
+2023-04-27 22:38:15,321 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] WARN  migratus.migrations - skipping: '20230426030416-lendings.down.sql~' migrations must match pattern: ^(\d+)-([^\.]+)((?:\.[^\.]+)+)$ 
+2023-04-27 22:38:15,322 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] INFO  migratus.core - Running down for [20230228002443] 
+2023-04-27 22:38:15,323 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] INFO  migratus.core - Down 20230228002443-initial-catalog-model 
+2023-04-27 22:38:15,323 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] INFO  migratus.database - Connection is  {:connection #object[org.postgresql.jdbc.PgConnection 0x1ed5429 org.postgresql.jdbc.PgConnection@1ed5429]} Config is {:store :database, :db {:connection-uri uri-censored}} 
+2023-04-27 22:38:15,329 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] DEBUG migratus.migration.sql - found 4 down migrations 
+2023-04-27 22:38:15,335 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] ERROR migratus.migration.sql - failed to execute command:
+ drop schema catalog;
+ 
+2023-04-27 22:38:15,335 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] ERROR migratus.migration.sql - ERROR: cannot drop schema catalog because other objects depend on it
+  Detail: function catalog.update_book_copies() depends on schema catalog
+  Hint: Use DROP ... CASCADE to drop the dependent objects too. 
+2023-04-27 22:38:15,337 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] INFO  migratus.core - Ending migrations 
+2023-04-27 22:38:40,942 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] INFO  migratus.core - Starting migrations 
+2023-04-27 22:38:40,987 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] DEBUG migratus.migrations - Looking for migrations in #object[java.io.File 0x68979972 /home/gaeldelameme/Ciencias/Ingeniería de Software/Prácticas/Práctica02/sugbi/resources/migrations] 
+2023-04-27 22:38:40,988 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] WARN  migratus.migrations - skipping: '20230426030416-lendings.up.sql~' migrations must match pattern: ^(\d+)-([^\.]+)((?:\.[^\.]+)+)$ 
+2023-04-27 22:38:40,988 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] WARN  migratus.migrations - skipping: '20230426030416-lendings.down.sql~' migrations must match pattern: ^(\d+)-([^\.]+)((?:\.[^\.]+)+)$ 
+2023-04-27 22:38:40,989 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] INFO  migratus.core - Running down for [20230228002443] 
+2023-04-27 22:38:40,990 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] INFO  migratus.core - Down 20230228002443-initial-catalog-model 
+2023-04-27 22:38:40,990 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] INFO  migratus.database - Connection is  {:connection #object[org.postgresql.jdbc.PgConnection 0x4d300e53 org.postgresql.jdbc.PgConnection@4d300e53]} Config is {:store :database, :db {:connection-uri uri-censored}} 
+2023-04-27 22:38:40,995 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] DEBUG migratus.migration.sql - found 4 down migrations 
+2023-04-27 22:38:41,000 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] ERROR migratus.migration.sql - failed to execute command:
+ drop schema catalog;
+ 
+2023-04-27 22:38:41,001 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] ERROR migratus.migration.sql - ERROR: cannot drop schema catalog because other objects depend on it
+  Detail: function catalog.update_book_copies() depends on schema catalog
+  Hint: Use DROP ... CASCADE to drop the dependent objects too. 
+2023-04-27 22:38:41,002 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] INFO  migratus.core - Ending migrations 
+2023-04-27 22:42:25,847 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] INFO  migratus.core - Starting migrations 
+2023-04-27 22:42:25,893 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] DEBUG migratus.migrations - Looking for migrations in #object[java.io.File 0x5cb6f1e2 /home/gaeldelameme/Ciencias/Ingeniería de Software/Prácticas/Práctica02/sugbi/resources/migrations] 
+2023-04-27 22:42:25,894 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] WARN  migratus.migrations - skipping: '20230426030416-lendings.up.sql~' migrations must match pattern: ^(\d+)-([^\.]+)((?:\.[^\.]+)+)$ 
+2023-04-27 22:42:25,895 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] WARN  migratus.migrations - skipping: '20230426030416-lendings.down.sql~' migrations must match pattern: ^(\d+)-([^\.]+)((?:\.[^\.]+)+)$ 
+2023-04-27 22:42:25,897 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] INFO  migratus.core - Running down for [20230228002443] 
+2023-04-27 22:42:25,897 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] INFO  migratus.core - Down 20230228002443-initial-catalog-model 
+2023-04-27 22:42:25,898 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] INFO  migratus.database - Connection is  {:connection #object[org.postgresql.jdbc.PgConnection 0x41bbcd09 org.postgresql.jdbc.PgConnection@41bbcd09]} Config is {:store :database, :db {:connection-uri uri-censored}} 
+2023-04-27 22:42:25,902 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] DEBUG migratus.migration.sql - found 4 down migrations 
+2023-04-27 22:42:25,910 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] ERROR migratus.migration.sql - failed to execute command:
+ drop schema catalog;
+ 
+2023-04-27 22:42:25,911 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] ERROR migratus.migration.sql - ERROR: cannot drop schema catalog because other objects depend on it
+  Detail: function catalog.update_book_copies() depends on schema catalog
+  Hint: Use DROP ... CASCADE to drop the dependent objects too. 
+2023-04-27 22:42:25,913 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] INFO  migratus.core - Ending migrations 
+2023-04-27 22:42:49,193 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] INFO  migratus.core - Starting migrations 
+2023-04-27 22:42:49,242 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] DEBUG migratus.migrations - Looking for migrations in #object[java.io.File 0x3850b901 /home/gaeldelameme/Ciencias/Ingeniería de Software/Prácticas/Práctica02/sugbi/resources/migrations] 
+2023-04-27 22:42:49,243 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] WARN  migratus.migrations - skipping: '20230426030416-lendings.up.sql~' migrations must match pattern: ^(\d+)-([^\.]+)((?:\.[^\.]+)+)$ 
+2023-04-27 22:42:49,244 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] WARN  migratus.migrations - skipping: '20230426030416-lendings.down.sql~' migrations must match pattern: ^(\d+)-([^\.]+)((?:\.[^\.]+)+)$ 
+2023-04-27 22:42:49,247 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] INFO  migratus.core - Running down for [20230228002443] 
+2023-04-27 22:42:49,248 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] INFO  migratus.core - Down 20230228002443-initial-catalog-model 
+2023-04-27 22:42:49,248 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] INFO  migratus.database - Connection is  {:connection #object[org.postgresql.jdbc.PgConnection 0x61f54083 org.postgresql.jdbc.PgConnection@61f54083]} Config is {:store :database, :db {:connection-uri uri-censored}} 
+2023-04-27 22:42:49,253 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] DEBUG migratus.migration.sql - found 4 down migrations 
+2023-04-27 22:42:49,257 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] ERROR migratus.migration.sql - failed to execute command:
+ drop schema catalog;
+ 
+2023-04-27 22:42:49,258 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] ERROR migratus.migration.sql - ERROR: cannot drop schema catalog because other objects depend on it
+  Detail: function catalog.update_book_copies() depends on schema catalog
+  Hint: Use DROP ... CASCADE to drop the dependent objects too. 
+2023-04-27 22:42:49,259 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] INFO  migratus.core - Ending migrations 
+2023-04-27 22:43:18,108 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] INFO  migratus.core - Starting migrations 
+2023-04-27 22:43:18,155 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] DEBUG migratus.migrations - Looking for migrations in #object[java.io.File 0x3e90ee26 /home/gaeldelameme/Ciencias/Ingeniería de Software/Prácticas/Práctica02/sugbi/resources/migrations] 
+2023-04-27 22:43:18,156 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] WARN  migratus.migrations - skipping: '20230426030416-lendings.up.sql~' migrations must match pattern: ^(\d+)-([^\.]+)((?:\.[^\.]+)+)$ 
+2023-04-27 22:43:18,156 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] WARN  migratus.migrations - skipping: '20230426030416-lendings.down.sql~' migrations must match pattern: ^(\d+)-([^\.]+)((?:\.[^\.]+)+)$ 
+2023-04-27 22:43:18,158 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] INFO  migratus.core - Running down for [20230228002443] 
+2023-04-27 22:43:18,158 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] INFO  migratus.core - Down 20230228002443-initial-catalog-model 
+2023-04-27 22:43:18,159 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] INFO  migratus.database - Connection is  {:connection #object[org.postgresql.jdbc.PgConnection 0x51f10948 org.postgresql.jdbc.PgConnection@51f10948]} Config is {:store :database, :db {:connection-uri uri-censored}} 
+2023-04-27 22:43:18,163 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] DEBUG migratus.migration.sql - found 4 down migrations 
+2023-04-27 22:43:18,167 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] ERROR migratus.migration.sql - failed to execute command:
+ drop schema catalog;
+ 
+2023-04-27 22:43:18,167 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] ERROR migratus.migration.sql - ERROR: cannot drop schema catalog because other objects depend on it
+  Detail: function catalog.update_book_copies() depends on schema catalog
+  Hint: Use DROP ... CASCADE to drop the dependent objects too. 
+2023-04-27 22:43:18,169 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] INFO  migratus.core - Ending migrations 
+2023-04-27 22:44:20,707 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] INFO  migratus.core - Starting migrations 
+2023-04-27 22:44:20,732 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] DEBUG migratus.migrations - Looking for migrations in #object[java.io.File 0x1703299f /home/gaeldelameme/Ciencias/Ingeniería de Software/Prácticas/Práctica02/sugbi/resources/migrations] 
+2023-04-27 22:44:20,733 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] WARN  migratus.migrations - skipping: '20230426030416-lendings.up.sql~' migrations must match pattern: ^(\d+)-([^\.]+)((?:\.[^\.]+)+)$ 
+2023-04-27 22:44:20,734 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] WARN  migratus.migrations - skipping: '20230426030416-lendings.down.sql~' migrations must match pattern: ^(\d+)-([^\.]+)((?:\.[^\.]+)+)$ 
+2023-04-27 22:44:20,736 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] INFO  migratus.core - Running down for [20230228002443] 
+2023-04-27 22:44:20,736 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] INFO  migratus.core - Down 20230228002443-initial-catalog-model 
+2023-04-27 22:44:20,737 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] INFO  migratus.database - Connection is  {:connection #object[org.postgresql.jdbc.PgConnection 0x119be054 org.postgresql.jdbc.PgConnection@119be054]} Config is {:store :database, :db {:connection-uri uri-censored}} 
+2023-04-27 22:44:20,742 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] DEBUG migratus.migration.sql - found 4 down migrations 
+2023-04-27 22:44:20,748 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] ERROR migratus.migration.sql - failed to execute command:
+ drop schema catalog;
+ 
+2023-04-27 22:44:20,749 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] ERROR migratus.migration.sql - ERROR: cannot drop schema catalog because other objects depend on it
+  Detail: function catalog.update_book_copies() depends on schema catalog
+  Hint: Use DROP ... CASCADE to drop the dependent objects too. 
+2023-04-27 22:44:20,751 [nREPL-session-0a5587eb-b32c-49d2-814f-b222f09c234f] INFO  migratus.core - Ending migrations 
+2023-04-27 22:45:46,334 [Thread-1] INFO  io.undertow - stopping server: Undertow - 2.2.4.Final 

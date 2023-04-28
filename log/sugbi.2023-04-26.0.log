@@ -1,0 +1,217 @@
+2023-04-26 10:31:06,302 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider 
+2023-04-26 10:31:07,135 [main] INFO  io.undertow - starting server: Undertow - 2.2.4.Final 
+2023-04-26 10:31:07,144 [main] INFO  org.xnio - XNIO version 3.8.0.Final 
+2023-04-26 10:31:07,258 [main] INFO  org.jboss.threads - JBoss Threads version 3.1.0.Final 
+2023-04-26 10:31:07,311 [main] DEBUG io.undertow - Configuring listener with protocol HTTP for interface 0.0.0.0 and port 9630 
+2023-04-26 10:32:09,094 [nREPL-session-e3b0d501-2a57-441f-93c2-19bee1677b01] INFO  sugbi.env - 
+-=[sugbi started successfully using the development profile]=- 
+2023-04-26 10:32:09,961 [nREPL-session-e3b0d501-2a57-441f-93c2-19bee1677b01] INFO  luminus.http-server - server started on port 3000 
+2023-04-26 10:32:37,193 [nREPL-session-e3b0d501-2a57-441f-93c2-19bee1677b01] INFO  migratus.core - Starting migrations 
+2023-04-26 10:32:37,286 [nREPL-session-e3b0d501-2a57-441f-93c2-19bee1677b01] DEBUG migratus.migrations - Looking for migrations in #object[java.io.File 0x70ef25f5 /home/gaeldelameme/Ciencias/Ingeniería de Software/Prácticas/Práctica02/sugbi/resources/migrations] 
+2023-04-26 10:32:37,288 [nREPL-session-e3b0d501-2a57-441f-93c2-19bee1677b01] WARN  migratus.migrations - skipping: '20230426030416-lendings.up.sql~' migrations must match pattern: ^(\d+)-([^\.]+)((?:\.[^\.]+)+)$ 
+2023-04-26 10:32:37,289 [nREPL-session-e3b0d501-2a57-441f-93c2-19bee1677b01] WARN  migratus.migrations - skipping: '20230426030416-lendings.down.sql~' migrations must match pattern: ^(\d+)-([^\.]+)((?:\.[^\.]+)+)$ 
+2023-04-26 10:32:37,294 [nREPL-session-e3b0d501-2a57-441f-93c2-19bee1677b01] INFO  migratus.core - Running down for [20230426030416 20230417032642 20230321184035 20230228002443] 
+2023-04-26 10:32:37,295 [nREPL-session-e3b0d501-2a57-441f-93c2-19bee1677b01] INFO  migratus.core - Down 20230426030416-lendings 
+2023-04-26 10:32:37,296 [nREPL-session-e3b0d501-2a57-441f-93c2-19bee1677b01] INFO  migratus.database - Connection is  {:connection #object[org.postgresql.jdbc.PgConnection 0x5b0600ea org.postgresql.jdbc.PgConnection@5b0600ea]} Config is {:store :database, :db {:connection-uri uri-censored}} 
+2023-04-26 10:32:37,310 [nREPL-session-e3b0d501-2a57-441f-93c2-19bee1677b01] DEBUG migratus.migration.sql - found 2 down migrations 
+2023-04-26 10:32:37,325 [nREPL-session-e3b0d501-2a57-441f-93c2-19bee1677b01] DEBUG migratus.database - marking 20230426030416 not complete 
+2023-04-26 10:32:37,328 [nREPL-session-e3b0d501-2a57-441f-93c2-19bee1677b01] INFO  migratus.core - Down 20230417032642-adds-librarians 
+2023-04-26 10:32:37,329 [nREPL-session-e3b0d501-2a57-441f-93c2-19bee1677b01] INFO  migratus.database - Connection is  {:connection #object[org.postgresql.jdbc.PgConnection 0x5b0600ea org.postgresql.jdbc.PgConnection@5b0600ea]} Config is {:store :database, :db {:connection-uri uri-censored}} 
+2023-04-26 10:32:37,332 [nREPL-session-e3b0d501-2a57-441f-93c2-19bee1677b01] DEBUG migratus.migration.sql - found 2 down migrations 
+2023-04-26 10:32:37,336 [nREPL-session-e3b0d501-2a57-441f-93c2-19bee1677b01] DEBUG migratus.database - marking 20230417032642 not complete 
+2023-04-26 10:32:37,338 [nREPL-session-e3b0d501-2a57-441f-93c2-19bee1677b01] INFO  migratus.core - Down 20230321184035-removes-catalog-book-info 
+2023-04-26 10:32:37,340 [nREPL-session-e3b0d501-2a57-441f-93c2-19bee1677b01] INFO  migratus.database - Connection is  {:connection #object[org.postgresql.jdbc.PgConnection 0x5b0600ea org.postgresql.jdbc.PgConnection@5b0600ea]} Config is {:store :database, :db {:connection-uri uri-censored}} 
+2023-04-26 10:32:37,344 [nREPL-session-e3b0d501-2a57-441f-93c2-19bee1677b01] DEBUG migratus.migration.sql - found 3 down migrations 
+2023-04-26 10:32:37,360 [nREPL-session-e3b0d501-2a57-441f-93c2-19bee1677b01] DEBUG migratus.database - marking 20230321184035 not complete 
+2023-04-26 10:32:37,362 [nREPL-session-e3b0d501-2a57-441f-93c2-19bee1677b01] INFO  migratus.core - Down 20230228002443-initial-catalog-model 
+2023-04-26 10:32:37,363 [nREPL-session-e3b0d501-2a57-441f-93c2-19bee1677b01] INFO  migratus.database - Connection is  {:connection #object[org.postgresql.jdbc.PgConnection 0x5b0600ea org.postgresql.jdbc.PgConnection@5b0600ea]} Config is {:store :database, :db {:connection-uri uri-censored}} 
+2023-04-26 10:32:37,366 [nREPL-session-e3b0d501-2a57-441f-93c2-19bee1677b01] DEBUG migratus.migration.sql - found 4 down migrations 
+2023-04-26 10:32:37,371 [nREPL-session-e3b0d501-2a57-441f-93c2-19bee1677b01] DEBUG migratus.database - marking 20230228002443 not complete 
+2023-04-26 10:32:37,374 [nREPL-session-e3b0d501-2a57-441f-93c2-19bee1677b01] INFO  migratus.core - Ending migrations 
+2023-04-26 10:32:37,375 [nREPL-session-e3b0d501-2a57-441f-93c2-19bee1677b01] INFO  migratus.core - Starting migrations 
+2023-04-26 10:32:37,398 [nREPL-session-e3b0d501-2a57-441f-93c2-19bee1677b01] DEBUG migratus.migrations - Looking for migrations in #object[java.io.File 0x28c2e52b /home/gaeldelameme/Ciencias/Ingeniería de Software/Prácticas/Práctica02/sugbi/resources/migrations] 
+2023-04-26 10:32:37,399 [nREPL-session-e3b0d501-2a57-441f-93c2-19bee1677b01] WARN  migratus.migrations - skipping: '20230426030416-lendings.up.sql~' migrations must match pattern: ^(\d+)-([^\.]+)((?:\.[^\.]+)+)$ 
+2023-04-26 10:32:37,400 [nREPL-session-e3b0d501-2a57-441f-93c2-19bee1677b01] WARN  migratus.migrations - skipping: '20230426030416-lendings.down.sql~' migrations must match pattern: ^(\d+)-([^\.]+)((?:\.[^\.]+)+)$ 
+2023-04-26 10:32:37,402 [nREPL-session-e3b0d501-2a57-441f-93c2-19bee1677b01] INFO  migratus.core - Running up for [20230228002443 20230321184035 20230417032642 20230426030416] 
+2023-04-26 10:32:37,403 [nREPL-session-e3b0d501-2a57-441f-93c2-19bee1677b01] INFO  migratus.core - Up 20230228002443-initial-catalog-model 
+2023-04-26 10:32:37,404 [nREPL-session-e3b0d501-2a57-441f-93c2-19bee1677b01] INFO  migratus.database - Connection is  {:connection #object[org.postgresql.jdbc.PgConnection 0x63298cf2 org.postgresql.jdbc.PgConnection@63298cf2]} Config is {:store :database, :db {:connection-uri uri-censored}} 
+2023-04-26 10:32:37,410 [nREPL-session-e3b0d501-2a57-441f-93c2-19bee1677b01] DEBUG migratus.migration.sql - found 4 up migrations 
+2023-04-26 10:32:37,427 [nREPL-session-e3b0d501-2a57-441f-93c2-19bee1677b01] DEBUG migratus.database - marking 20230228002443 complete 
+2023-04-26 10:32:37,433 [nREPL-session-e3b0d501-2a57-441f-93c2-19bee1677b01] INFO  migratus.core - Up 20230321184035-removes-catalog-book-info 
+2023-04-26 10:32:37,434 [nREPL-session-e3b0d501-2a57-441f-93c2-19bee1677b01] INFO  migratus.database - Connection is  {:connection #object[org.postgresql.jdbc.PgConnection 0x63298cf2 org.postgresql.jdbc.PgConnection@63298cf2]} Config is {:store :database, :db {:connection-uri uri-censored}} 
+2023-04-26 10:32:37,437 [nREPL-session-e3b0d501-2a57-441f-93c2-19bee1677b01] DEBUG migratus.migration.sql - found 3 up migrations 
+2023-04-26 10:32:37,444 [nREPL-session-e3b0d501-2a57-441f-93c2-19bee1677b01] DEBUG migratus.database - marking 20230321184035 complete 
+2023-04-26 10:32:37,447 [nREPL-session-e3b0d501-2a57-441f-93c2-19bee1677b01] INFO  migratus.core - Up 20230417032642-adds-librarians 
+2023-04-26 10:32:37,448 [nREPL-session-e3b0d501-2a57-441f-93c2-19bee1677b01] INFO  migratus.database - Connection is  {:connection #object[org.postgresql.jdbc.PgConnection 0x63298cf2 org.postgresql.jdbc.PgConnection@63298cf2]} Config is {:store :database, :db {:connection-uri uri-censored}} 
+2023-04-26 10:32:37,451 [nREPL-session-e3b0d501-2a57-441f-93c2-19bee1677b01] DEBUG migratus.migration.sql - found 2 up migrations 
+2023-04-26 10:32:37,459 [nREPL-session-e3b0d501-2a57-441f-93c2-19bee1677b01] DEBUG migratus.database - marking 20230417032642 complete 
+2023-04-26 10:32:37,464 [nREPL-session-e3b0d501-2a57-441f-93c2-19bee1677b01] INFO  migratus.core - Up 20230426030416-lendings 
+2023-04-26 10:32:37,465 [nREPL-session-e3b0d501-2a57-441f-93c2-19bee1677b01] INFO  migratus.database - Connection is  {:connection #object[org.postgresql.jdbc.PgConnection 0x63298cf2 org.postgresql.jdbc.PgConnection@63298cf2]} Config is {:store :database, :db {:connection-uri uri-censored}} 
+2023-04-26 10:32:37,467 [nREPL-session-e3b0d501-2a57-441f-93c2-19bee1677b01] DEBUG migratus.migration.sql - found 3 up migrations 
+2023-04-26 10:32:37,487 [nREPL-session-e3b0d501-2a57-441f-93c2-19bee1677b01] ERROR migratus.migration.sql - failed to execute command:
+ CREATE OR REPLACE FUNCTION update_book_copies()
+RETURNS TRIGGER AS $$
+BEGIN
+IF TG_OP = 'INSERT' THEN
+UPDATE books SET copies = copies + 1 WHERE id = NEW.book_id;
+ELSIF TG_OP = 'DELETE' THEN
+UPDATE books SET copies = copies - 1 WHERE id = OLD.book_id;
+END IF;
+RETURN NULL;
+END;
+$$ LANGUAGE plpgsql;
+
+CREATE TRIGGER update_book_copies_trigger
+AFTER INSERT OR DELETE ON lending
+FOR EACH ROW
+EXECUTE FUNCTION update_book_copies();
+ 
+2023-04-26 10:32:37,488 [nREPL-session-e3b0d501-2a57-441f-93c2-19bee1677b01] ERROR migratus.migration.sql - ERROR: relation "lending" does not exist 
+2023-04-26 10:32:37,489 [nREPL-session-e3b0d501-2a57-441f-93c2-19bee1677b01] ERROR migratus.database - Migration lendings failed because Batch entry 1 <unknown> was aborted: ERROR: relation "lending" does not exist  Call getNextException to see other errors in the batch. backing out 
+2023-04-26 10:32:37,490 [nREPL-session-e3b0d501-2a57-441f-93c2-19bee1677b01] DEBUG migratus.migration.sql - found 2 down migrations 
+2023-04-26 10:32:37,492 [nREPL-session-e3b0d501-2a57-441f-93c2-19bee1677b01] ERROR migratus.migration.sql - failed to execute command:
+ alter table catalog.book
+drop column copies,
+drop column available;
+ 
+2023-04-26 10:32:37,493 [nREPL-session-e3b0d501-2a57-441f-93c2-19bee1677b01] ERROR migratus.migration.sql - ERROR: column "copies" of relation "book" does not exist 
+2023-04-26 10:32:37,494 [nREPL-session-e3b0d501-2a57-441f-93c2-19bee1677b01] DEBUG migratus.database - As expected, one of the statements failed in lendings while backing out the migration 
+java.sql.BatchUpdateException: Batch entry 0 alter table catalog.book
+drop column copies,
+drop column available was aborted: ERROR: column "copies" of relation "book" does not exist  Call getNextException to see other errors in the batch.
+	at org.postgresql.jdbc.BatchResultHandler.handleError(BatchResultHandler.java:165)
+	at org.postgresql.core.ResultHandlerDelegate.handleError(ResultHandlerDelegate.java:52)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:559)
+	at org.postgresql.jdbc.PgStatement.internalExecuteBatch(PgStatement.java:887)
+	at org.postgresql.jdbc.PgStatement.executeBatch(PgStatement.java:910)
+	at migratus.migration.sql$do_commands.invokeStatic(sql.clj:71)
+	at migratus.migration.sql$do_commands.invoke(sql.clj:60)
+	at migratus.migration.sql$execute_command$fn__27811.invoke(sql.clj:79)
+	at migratus.migration.sql$execute_command.invokeStatic(sql.clj:78)
+	at migratus.migration.sql$execute_command.invoke(sql.clj:75)
+	at migratus.migration.sql$run_sql_STAR_.invokeStatic(sql.clj:96)
+	at migratus.migration.sql$run_sql_STAR_.invoke(sql.clj:92)
+	at migratus.migration.sql$run_sql$fn__27829.invoke(sql.clj:103)
+	at next.jdbc.transaction$transact_STAR_.invokeStatic(transaction.clj:72)
+	at next.jdbc.transaction$transact_STAR_.invoke(transaction.clj:51)
+	at next.jdbc.transaction$eval13275$fn__13276.invoke(transaction.clj:121)
+	at next.jdbc.protocols$eval12267$fn__12268$G__12258__12277.invoke(protocols.clj:57)
+	at next.jdbc$transact.invokeStatic(jdbc.clj:381)
+	at next.jdbc$transact.invoke(jdbc.clj:373)
+	at migratus.migration.sql$run_sql.invokeStatic(sql.clj:102)
+	at migratus.migration.sql$run_sql.invoke(sql.clj:98)
+	at migratus.migration.sql.SqlMigration.down(sql.clj:122)
+	at migratus.database$migrate_up_STAR_$fn__28197.invoke(database.clj:89)
+	at migratus.database$migrate_up_STAR_.invokeStatic(database.clj:88)
+	at migratus.database$migrate_up_STAR_.invoke(database.clj:74)
+	at migratus.database.Database$fn__28263.invoke(database.clj:301)
+	at next.jdbc.transaction$transact_STAR_.invokeStatic(transaction.clj:72)
+	at next.jdbc.transaction$transact_STAR_.invoke(transaction.clj:51)
+	at next.jdbc.transaction$eval13275$fn__13276.invoke(transaction.clj:121)
+	at next.jdbc.protocols$eval12267$fn__12268$G__12258__12277.invoke(protocols.clj:57)
+	at next.jdbc$transact.invokeStatic(jdbc.clj:381)
+	at next.jdbc$transact.invoke(jdbc.clj:373)
+	at migratus.database.Database.migrate_up(database.clj:300)
+	at migratus.core$up_STAR_.invokeStatic(core.clj:83)
+	at migratus.core$up_STAR_.invoke(core.clj:81)
+	at migratus.core$migrate_up_STAR_.invokeStatic(core.clj:94)
+	at migratus.core$migrate_up_STAR_.invoke(core.clj:85)
+	at migratus.core$migrate_STAR_.invokeStatic(core.clj:107)
+	at migratus.core$migrate_STAR_.invoke(core.clj:103)
+	at clojure.core$partial$fn__5908.invoke(core.clj:2642)
+	at migratus.core$run.invokeStatic(core.clj:54)
+	at migratus.core$run.invoke(core.clj:50)
+	at migratus.core$migrate.invokeStatic(core.clj:114)
+	at migratus.core$migrate.invoke(core.clj:109)
+	at migratus.core$reset.invokeStatic(core.clj:168)
+	at migratus.core$reset.invoke(core.clj:163)
+	at luminus_migrations.core$fn__28414.invokeStatic(core.clj:28)
+	at luminus_migrations.core$fn__28414.invoke(core.clj:27)
+	at luminus_migrations.core$migrate.invokeStatic(core.clj:98)
+	at luminus_migrations.core$migrate.invoke(core.clj:84)
+	at user$reset_db.invokeStatic(user.clj:44)
+	at user$reset_db.invoke(user.clj:41)
+	at shadow.user$eval55564.invokeStatic(form-init14158662342116869694.clj:57)
+	at shadow.user$eval55564.invoke(form-init14158662342116869694.clj:57)
+	at clojure.lang.Compiler.eval(Compiler.java:7194)
+	at clojure.lang.Compiler.eval(Compiler.java:7149)
+	at clojure.core$eval.invokeStatic(core.clj:3215)
+	at clojure.core$eval.invoke(core.clj:3211)
+	at nrepl.middleware.interruptible_eval$evaluate$fn__26123$fn__26124.invoke(interruptible_eval.clj:87)
+	at clojure.lang.AFn.applyToHelper(AFn.java:152)
+	at clojure.lang.AFn.applyTo(AFn.java:144)
+	at clojure.core$apply.invokeStatic(core.clj:667)
+	at clojure.core$with_bindings_STAR_.invokeStatic(core.clj:1990)
+	at clojure.core$with_bindings_STAR_.doInvoke(core.clj:1990)
+	at clojure.lang.RestFn.invoke(RestFn.java:425)
+	at nrepl.middleware.interruptible_eval$evaluate$fn__26123.invoke(interruptible_eval.clj:87)
+	at clojure.main$repl$read_eval_print__9206$fn__9209.invoke(main.clj:437)
+	at clojure.main$repl$read_eval_print__9206.invoke(main.clj:437)
+	at clojure.main$repl$fn__9215.invoke(main.clj:458)
+	at clojure.main$repl.invokeStatic(main.clj:458)
+	at clojure.main$repl.doInvoke(main.clj:368)
+	at clojure.lang.RestFn.invoke(RestFn.java:1523)
+	at nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+	at nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+	at nrepl.middleware.interruptible_eval$interruptible_eval$fn__26156$fn__26160.invoke(interruptible_eval.clj:152)
+	at clojure.lang.AFn.run(AFn.java:22)
+	at nrepl.middleware.session$session_exec$main_loop__26226$fn__26230.invoke(session.clj:218)
+	at nrepl.middleware.session$session_exec$main_loop__26226.invoke(session.clj:217)
+	at clojure.lang.AFn.run(AFn.java:22)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.postgresql.util.PSQLException: ERROR: column "copies" of relation "book" does not exist
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2675)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2365)
+	... 78 common frames omitted
+2023-04-26 10:32:37,499 [nREPL-session-e3b0d501-2a57-441f-93c2-19bee1677b01] INFO  migratus.core - Ending migrations 
+2023-04-26 10:34:22,923 [Thread-1] INFO  io.undertow - stopping server: Undertow - 2.2.4.Final 
+2023-04-26 10:35:21,321 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider 
+2023-04-26 10:35:22,191 [main] INFO  io.undertow - starting server: Undertow - 2.2.4.Final 
+2023-04-26 10:35:22,199 [main] INFO  org.xnio - XNIO version 3.8.0.Final 
+2023-04-26 10:35:22,288 [main] INFO  org.jboss.threads - JBoss Threads version 3.1.0.Final 
+2023-04-26 10:35:22,319 [main] DEBUG io.undertow - Configuring listener with protocol HTTP for interface 0.0.0.0 and port 9630 
+2023-04-26 10:35:37,766 [nREPL-session-0f115bff-cb4a-4c78-b13f-10b629538039] INFO  sugbi.env - 
+-=[sugbi started successfully using the development profile]=- 
+2023-04-26 10:35:38,605 [nREPL-session-0f115bff-cb4a-4c78-b13f-10b629538039] INFO  luminus.http-server - server started on port 3000 
+2023-04-26 10:35:44,520 [nREPL-session-0f115bff-cb4a-4c78-b13f-10b629538039] INFO  migratus.core - Starting migrations 
+2023-04-26 10:35:44,573 [nREPL-session-0f115bff-cb4a-4c78-b13f-10b629538039] DEBUG migratus.migrations - Looking for migrations in #object[java.io.File 0x1c73d6d /home/gaeldelameme/Ciencias/Ingeniería de Software/Prácticas/Práctica02/sugbi/resources/migrations] 
+2023-04-26 10:35:44,576 [nREPL-session-0f115bff-cb4a-4c78-b13f-10b629538039] WARN  migratus.migrations - skipping: '20230426030416-lendings.up.sql~' migrations must match pattern: ^(\d+)-([^\.]+)((?:\.[^\.]+)+)$ 
+2023-04-26 10:35:44,579 [nREPL-session-0f115bff-cb4a-4c78-b13f-10b629538039] WARN  migratus.migrations - skipping: '20230426030416-lendings.down.sql~' migrations must match pattern: ^(\d+)-([^\.]+)((?:\.[^\.]+)+)$ 
+2023-04-26 10:35:44,581 [nREPL-session-0f115bff-cb4a-4c78-b13f-10b629538039] INFO  migratus.core - Running down for [20230417032642 20230321184035 20230228002443] 
+2023-04-26 10:35:44,582 [nREPL-session-0f115bff-cb4a-4c78-b13f-10b629538039] INFO  migratus.core - Down 20230417032642-adds-librarians 
+2023-04-26 10:35:44,584 [nREPL-session-0f115bff-cb4a-4c78-b13f-10b629538039] INFO  migratus.database - Connection is  {:connection #object[org.postgresql.jdbc.PgConnection 0x4bbb3dbd org.postgresql.jdbc.PgConnection@4bbb3dbd]} Config is {:store :database, :db {:connection-uri uri-censored}} 
+2023-04-26 10:35:44,594 [nREPL-session-0f115bff-cb4a-4c78-b13f-10b629538039] DEBUG migratus.migration.sql - found 2 down migrations 
+2023-04-26 10:35:44,613 [nREPL-session-0f115bff-cb4a-4c78-b13f-10b629538039] DEBUG migratus.database - marking 20230417032642 not complete 
+2023-04-26 10:35:44,617 [nREPL-session-0f115bff-cb4a-4c78-b13f-10b629538039] INFO  migratus.core - Down 20230321184035-removes-catalog-book-info 
+2023-04-26 10:35:44,618 [nREPL-session-0f115bff-cb4a-4c78-b13f-10b629538039] INFO  migratus.database - Connection is  {:connection #object[org.postgresql.jdbc.PgConnection 0x4bbb3dbd org.postgresql.jdbc.PgConnection@4bbb3dbd]} Config is {:store :database, :db {:connection-uri uri-censored}} 
+2023-04-26 10:35:44,622 [nREPL-session-0f115bff-cb4a-4c78-b13f-10b629538039] DEBUG migratus.migration.sql - found 3 down migrations 
+2023-04-26 10:35:44,631 [nREPL-session-0f115bff-cb4a-4c78-b13f-10b629538039] DEBUG migratus.database - marking 20230321184035 not complete 
+2023-04-26 10:35:44,634 [nREPL-session-0f115bff-cb4a-4c78-b13f-10b629538039] INFO  migratus.core - Down 20230228002443-initial-catalog-model 
+2023-04-26 10:35:44,635 [nREPL-session-0f115bff-cb4a-4c78-b13f-10b629538039] INFO  migratus.database - Connection is  {:connection #object[org.postgresql.jdbc.PgConnection 0x4bbb3dbd org.postgresql.jdbc.PgConnection@4bbb3dbd]} Config is {:store :database, :db {:connection-uri uri-censored}} 
+2023-04-26 10:35:44,638 [nREPL-session-0f115bff-cb4a-4c78-b13f-10b629538039] DEBUG migratus.migration.sql - found 4 down migrations 
+2023-04-26 10:35:44,646 [nREPL-session-0f115bff-cb4a-4c78-b13f-10b629538039] DEBUG migratus.database - marking 20230228002443 not complete 
+2023-04-26 10:35:44,649 [nREPL-session-0f115bff-cb4a-4c78-b13f-10b629538039] INFO  migratus.core - Ending migrations 
+2023-04-26 10:35:44,651 [nREPL-session-0f115bff-cb4a-4c78-b13f-10b629538039] INFO  migratus.core - Starting migrations 
+2023-04-26 10:35:44,672 [nREPL-session-0f115bff-cb4a-4c78-b13f-10b629538039] DEBUG migratus.migrations - Looking for migrations in #object[java.io.File 0x7d49e44c /home/gaeldelameme/Ciencias/Ingeniería de Software/Prácticas/Práctica02/sugbi/resources/migrations] 
+2023-04-26 10:35:44,673 [nREPL-session-0f115bff-cb4a-4c78-b13f-10b629538039] WARN  migratus.migrations - skipping: '20230426030416-lendings.up.sql~' migrations must match pattern: ^(\d+)-([^\.]+)((?:\.[^\.]+)+)$ 
+2023-04-26 10:35:44,673 [nREPL-session-0f115bff-cb4a-4c78-b13f-10b629538039] WARN  migratus.migrations - skipping: '20230426030416-lendings.down.sql~' migrations must match pattern: ^(\d+)-([^\.]+)((?:\.[^\.]+)+)$ 
+2023-04-26 10:35:44,675 [nREPL-session-0f115bff-cb4a-4c78-b13f-10b629538039] INFO  migratus.core - Running up for [20230228002443 20230321184035 20230417032642 20230426030416] 
+2023-04-26 10:35:44,675 [nREPL-session-0f115bff-cb4a-4c78-b13f-10b629538039] INFO  migratus.core - Up 20230228002443-initial-catalog-model 
+2023-04-26 10:35:44,676 [nREPL-session-0f115bff-cb4a-4c78-b13f-10b629538039] INFO  migratus.database - Connection is  {:connection #object[org.postgresql.jdbc.PgConnection 0x28ade7b9 org.postgresql.jdbc.PgConnection@28ade7b9]} Config is {:store :database, :db {:connection-uri uri-censored}} 
+2023-04-26 10:35:44,683 [nREPL-session-0f115bff-cb4a-4c78-b13f-10b629538039] DEBUG migratus.migration.sql - found 4 up migrations 
+2023-04-26 10:35:44,699 [nREPL-session-0f115bff-cb4a-4c78-b13f-10b629538039] DEBUG migratus.database - marking 20230228002443 complete 
+2023-04-26 10:35:44,704 [nREPL-session-0f115bff-cb4a-4c78-b13f-10b629538039] INFO  migratus.core - Up 20230321184035-removes-catalog-book-info 
+2023-04-26 10:35:44,705 [nREPL-session-0f115bff-cb4a-4c78-b13f-10b629538039] INFO  migratus.database - Connection is  {:connection #object[org.postgresql.jdbc.PgConnection 0x28ade7b9 org.postgresql.jdbc.PgConnection@28ade7b9]} Config is {:store :database, :db {:connection-uri uri-censored}} 
+2023-04-26 10:35:44,707 [nREPL-session-0f115bff-cb4a-4c78-b13f-10b629538039] DEBUG migratus.migration.sql - found 3 up migrations 
+2023-04-26 10:35:44,714 [nREPL-session-0f115bff-cb4a-4c78-b13f-10b629538039] DEBUG migratus.database - marking 20230321184035 complete 
+2023-04-26 10:35:44,718 [nREPL-session-0f115bff-cb4a-4c78-b13f-10b629538039] INFO  migratus.core - Up 20230417032642-adds-librarians 
+2023-04-26 10:35:44,719 [nREPL-session-0f115bff-cb4a-4c78-b13f-10b629538039] INFO  migratus.database - Connection is  {:connection #object[org.postgresql.jdbc.PgConnection 0x28ade7b9 org.postgresql.jdbc.PgConnection@28ade7b9]} Config is {:store :database, :db {:connection-uri uri-censored}} 
+2023-04-26 10:35:44,722 [nREPL-session-0f115bff-cb4a-4c78-b13f-10b629538039] DEBUG migratus.migration.sql - found 2 up migrations 
+2023-04-26 10:35:44,729 [nREPL-session-0f115bff-cb4a-4c78-b13f-10b629538039] DEBUG migratus.database - marking 20230417032642 complete 
+2023-04-26 10:35:44,732 [nREPL-session-0f115bff-cb4a-4c78-b13f-10b629538039] INFO  migratus.core - Up 20230426030416-lendings 
+2023-04-26 10:35:44,733 [nREPL-session-0f115bff-cb4a-4c78-b13f-10b629538039] INFO  migratus.database - Connection is  {:connection #object[org.postgresql.jdbc.PgConnection 0x28ade7b9 org.postgresql.jdbc.PgConnection@28ade7b9]} Config is {:store :database, :db {:connection-uri uri-censored}} 
+2023-04-26 10:35:44,735 [nREPL-session-0f115bff-cb4a-4c78-b13f-10b629538039] DEBUG migratus.migration.sql - found 2 up migrations 
+2023-04-26 10:35:44,742 [nREPL-session-0f115bff-cb4a-4c78-b13f-10b629538039] DEBUG migratus.database - marking 20230426030416 complete 
+2023-04-26 10:35:44,745 [nREPL-session-0f115bff-cb4a-4c78-b13f-10b629538039] INFO  migratus.core - Ending migrations 
+2023-04-26 10:35:54,029 [Thread-1] INFO  io.undertow - stopping server: Undertow - 2.2.4.Final 
