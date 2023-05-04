@@ -1,5 +1,6 @@
 (ns sugbi.catalog.db
  (:require
+  [byte-streams :as byte-streams]
   [camel-snake-kebab.core :as csk]
   [clojure.string :as str]
   [conman.core :as conman]
@@ -7,6 +8,13 @@
   [medley.core :as medley]))
 
 (conman/bind-connection db/*db* "sql/catalog.sql")
+
+
+(defn format-file
+  [temp-file]
+  (-> temp-file
+      :tempfile
+      byte-streams/to-byte-array))
 
 
 (defn matching-books
