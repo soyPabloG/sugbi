@@ -20,7 +20,7 @@
     :class (when (= page @(rf/subscribe [:common/page-id])) :is-active)}
    title])
 
-(defn navbar [] 
+(defn navbar []
   (r/with-let [expanded? (r/atom false)]
               [:nav.navbar.is-info>div.container
                [:div.navbar-brand
@@ -45,11 +45,38 @@
    (when-let [docs @(rf/subscribe [:docs])]
      [:div {:dangerouslySetInnerHTML {:__html (md->html docs)}}])])
 
+(defn card
+  [name username content]
+  [:div {:class :card}
+   [:div {:class :card-image}
+    [:figure {:class [:image :is-4by3]}
+     [:img {:src "https://bulma.io/images/placeholders/1280x960.png" :alt "Placeholder image"}]]]
+   [:div {:class :card-content}
+    [:div {:class :media}
+     [:div {:class :media-left}
+      [:figure {:class [:image :is-48x48]}
+       [:img {:src "https://bulma.io/images/placeholders/96x96.png" :alt "Placeholder image"}]]]
+     [:div {:class :media-content}
+      [:p {:class [:title :is-4]} name]
+      [:p {:class [:subtitle :is-6]} username]]]
+    [:div {:class :content}
+     content]]])
+
+(defn modal [content]
+  (let [open? (r/atom true)]
+    (fn []
+      [:div.modal {:class (when @open? :is-active)}
+       [:div.modal-background]
+       [:div.modal-content content]
+       [:button.modal-close.is-large {:aria-label :close
+                                      :on-click #(swap! open? not)}]])))
+
 (defn page []
   (if-let [page @(rf/subscribe [:common/page])]
     [:div
      [navbar]
-     [page]]))
+     [modal
+      [card "Pablo" "@soyPabloG" [:p "Hello World!"]]]]))
 
 (defn navigate! [match _]
   (rf/dispatch [:common/navigate match]))
